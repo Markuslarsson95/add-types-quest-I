@@ -29,27 +29,27 @@ printSum(5, 12);
 const users: User[] = [
   {
     name: "Stina",
-    hobby: ["läsa böcker"],
+    hobby: ["Fotboll", "Läsa"],
     age: 67,
   },
   {
     name: "Lisa",
-    hobby: ["åka skidor"],
+    hobby: ["Padel"],
     age: 26,
   },
   {
     name: "Mio",
-    hobby: ["spela rollspel", "spela brädspel"],
+    hobby: ["Virka", "Läsa"],
     age: 22,
   },
   {
     name: "Olle",
-    hobby: ["sportklättring", "vandra", "sticka", "virka"],
+    hobby: ["Matlagning", "Padel"],
     age: 38,
   },
   {
     name: "Leo",
-    hobby: ["matlagning", "bakning"],
+    hobby: ["Padel", "Padel", "Matlagning"],
     age: 17,
   },
 ];
@@ -72,15 +72,15 @@ console.log(
 );
 
 const dogs: Dog[] = [
-  { name: "Nisse", color: "brown" },
-  { name: "Fiffi", color: "white" },
-  { name: "Fluffe", color: "black" },
-  { name: "Hoppe", color: "beige" },
-  { name: "Pluto", color: "gray" },
-  { name: "Winter", color: "gray" },
-  { name: "Rolf", color: "brown" },
-  { name: "Benny", color: "brown" },
-  { name: "Krister", color: "brown" },
+  { name: "Nisse", color: "Brown" },
+  { name: "Fiffi", color: "White" },
+  { name: "Fluffe", color: "Black" },
+  { name: "Hoppe", color: "Beige" },
+  { name: "Pluto", color: "Gray" },
+  { name: "Winter", color: "Gray" },
+  { name: "Rolf", color: "Brown" },
+  { name: "Benny", color: "Brown" },
+  { name: "Krister", color: "Brown" },
 ];
 
 console.log(`Vi har ${dogs.length} stycken hundar.`);

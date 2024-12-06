@@ -1,7 +1,9 @@
+import Hobby from "./props/hobby";
+
 type User = {
   name: string;
   age: number;
-  hobby: string[];
+  hobby: Hobby[];
 };
 
 export default User;
