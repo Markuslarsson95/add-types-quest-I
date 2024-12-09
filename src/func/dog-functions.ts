@@ -1,15 +1,22 @@
 import Dog from "../dog";
+import Color from "../props/color";
 
-const getDogColors = (dogs: Dog[]): string[] => {
-  const colors: string[] = [];
+const getDogColors = (dogs: Dog[]): Color[] => {
+  const colors: Color[] = [];
   dogs.forEach((dog) => {
     colors.push(dog.color);
   });
   return colors;
 };
 export const numberOfUniqueColors = (dogs: Dog[]): number => {
-  const colors = getDogColors(dogs);
-  return Array.from(new Set(colors)).length;
+  const uniqueColors: Color[] = [];
+  const allColors = getDogColors(dogs);
+  allColors.forEach((color) => {
+    if (uniqueColors.indexOf(color) === -1) {
+      uniqueColors.push(color);
+    }
+  });
+  return uniqueColors.length;
 };
 
 export const mostCommonColor = (dogs: Dog[]): string | undefined => {
